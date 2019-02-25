@@ -29,7 +29,7 @@ let arrFilter = [1,2,2,3,4,3,5,6,4,2,1];
 let arr2 = arrFilter.filter((item,index,self)=>{
     return self.indexOf(item) == index;
 })
-let arr3 = [...new Set(arrFilter)];
+let arr3 = Array.from([...new Set(arrFilter)]);
 
 
 /**
